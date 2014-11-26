@@ -73,6 +73,7 @@ console.log('Testing Constructor (with passsengers)');
 myCar = new Car('Acura', 'Integra', 1999, 'Red', 4);
 assert.deepEqual(myCar.passengers,[],"Passengers does not default to an empty array if left blank.");
 myCar = new Car('Acura', 'Integra', 1999, 'Red', 4, ['Anil','Sarah']);
+console.log(myCar)
 assert.deepEqual(myCar.passengers,['Anil','Sarah'],"Passengers array not updated. Expected ['Anil','Sarah']");
 success();
 
@@ -85,6 +86,7 @@ myCar.start();
 assert.strictEqual(myCar.pickUp('Randall'),true,'Car did not allow picking up a passenger (returned false).');
 assert.deepEqual(myCar.passengers,['Anil','Sarah','Randall'],"Passengers array not updated. Expected ['Anil','Sarah','Randall']");
 success();
+
 
 //test pickUp
 console.log('Testing seat limit');
