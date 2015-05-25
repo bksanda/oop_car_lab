@@ -1,3 +1,7 @@
+###2014-2015, WDI COURSE ASSIGNMENT
+####Testing using assert
+***
+
 # Prototype Body Shop
 ## Implement the following
 
@@ -43,7 +47,7 @@ Implement and test the following methods:
 * `Car.park()` only if the car is not running you should console.log `parked!!`.  Should return true if it is successful and false if it is not.
 
 
-## Phase III 
+## Phase III
 
 Add the following property to the constructor:
 
@@ -57,7 +61,7 @@ Implement the following methods:
 * `Car.dropOff()` it should take a `name` and remove them from the `passengers` array, but only if they are in the array. It should also only drop them off if the car is `on`. It should also output `"driving to drop off <friend>"` and return true on success and false on failure.
 * `Car.passengerCount()` should return the number (integer) of passengers currently in the car.
 
-  
+
 **NOTE:** When deciding if there are enough seats available remember that the driver takes up 1 seat, but is NOT counted as a passenger in passengerCount(). You can assume the driver is the owner.
 
 
